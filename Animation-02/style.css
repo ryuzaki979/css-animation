@@ -1,0 +1,145 @@
+body{
+    background: black;
+  }
+  
+  .cir2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100px;
+      height: 100px;
+      border: 1px solid white;
+      border-radius: 50%;
+  }
+  
+  .cir2:nth-child(1){
+          width: 100px;
+          height: 100px;
+          top: 25%;
+          left: 25%;
+          animation: rotate1 2s ease infinite alternate ;
+          opacity:0;
+          animation-delay: .1s;
+      }
+      .cir2:nth-child(2){
+          width: 100px;
+          height: 100px;
+          top: 25%;
+          left: 25%;
+          animation: rotate1 2s ease infinite alternate ;
+          opacity:0;
+          animation-delay: .2s;
+      }
+      .cir2:nth-child(3){
+          width: 100px;
+          height: 100px;
+          top: 25%;
+          left: 25%;
+          animation: rotate1 2s ease infinite alternate ;
+          opacity:0;
+          animation-delay: .3s;
+      }
+      .cir2:nth-child(4){
+          width: 100px;
+          height: 100px;
+          top: 25%;
+          left: 25%;
+          animation: rotate1 2s ease infinite alternate;
+          opacity:0;
+          animation-delay: .4s;
+      }
+      .cir2:nth-child(5){
+          width: 100px;
+          height: 100px;
+          top: 25%;
+          left: 25%;
+          animation: rotate1 2s ease infinite alternate;
+          opacity:0;
+          animation-delay: .5s;
+      }
+      .cir2:nth-child(6){
+          width: 100px;
+          height: 100px;
+          top: 75%;
+          left: 75%;
+          animation: rotate 2s linear infinite alternate;
+          opacity:1;
+          animation-delay: .5s;
+      }
+      .cir2:nth-child(7){
+          width: 100px;
+          height: 100px;
+          top: 75%;
+          left: 75%;
+          animation: rotate 2s linear infinite alternate;
+          opacity:1;
+          animation-delay: .4s;
+      }
+      .cir2:nth-child(8){
+          width: 100px;
+          height: 100px;
+          top: 75%;
+          left: 75%;
+          animation: rotate 2s linear infinite alternate;
+          opacity:1;
+          animation-delay: .3s;
+      }
+      .cir2:nth-child(9){
+          width: 100px;
+          height: 100px;
+          top: 75%;
+          left: 75%;
+          animation: rotate 2s linear infinite alternate;
+          opacity:1;
+          animation-delay: .2s;
+      }
+      .cir2:nth-child(10){
+          width: 100px;
+          height: 100px;
+          top: 75%;
+          left: 75%;
+          animation: rotate 2s linear infinite alternate;
+          opacity:1;
+          animation-delay: .1s;
+      }
+  
+  
+  
+  @keyframes rotate{
+     0%{
+         top: 75%;
+         left: 75%;
+         transform: scale(1);
+         opacity: .5;
+     }
+     50%{
+         transform: scale(0);
+         opacity: 1;
+         
+     }
+     100%{
+         transform: scale(1);
+         opacity: .5;
+     }
+     
+  }
+  @keyframes rotate1{
+     0%{
+         top: 75%;
+         left: 75%;
+         transform: scale(1);
+         opacity: .5;
+     }
+     50%{
+         transform: scale(0);
+         opacity: 1;
+         border-color: rgb(1, 247, 255);
+     }
+     100%{
+         transform: scale(1);
+         opacity: .5;
+         border-color: rgb(2, 199, 248);
+     }
+     
+  }
