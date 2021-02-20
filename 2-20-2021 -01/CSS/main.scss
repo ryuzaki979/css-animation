@@ -1,0 +1,153 @@
+//Reset
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//Variables
+:root{
+    --ubuntu: 'Ubuntu', sans-serif;
+    --robotoMono: 'Roboto Mono', monospace;
+    --darkBlack:  #1c2833;
+    --darkBlue:  #1f618d;
+    --yellow:  #f4d03f;
+    --grey:  #424949;
+    --green:  #27ae60;
+}
+
+body{
+    color: var(--darkBlack);
+    font-family: var(--robotoMono);
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+.center-container{
+    border: 2px solid orangered;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; //display: grid;place content: center dont work with position absolute; so use display: flex;
+    position: relative;
+}
+.height{
+    height:50px;
+    overflow: hidden;
+    border: 2px solid;
+    width: 300px;
+    position: relative;
+    
+}
+.change{
+ margin-left: 1rem;
+ animation: c0 3s ease-in-out forwards;
+ position: absolute;
+}
+// #c0{
+//     color: var(--darkBlue);
+// }
+// #c0{
+//     animation: c0 1s ease forwards ;
+// }
+
+#c1{
+    transform: translateY(40px);
+
+}
+#c2{
+    transform: translateY(80px);
+
+}
+#c3{
+    transform: translateY(120px);
+
+}
+#c4{
+    transform: translateY(160px);
+}
+
+#c1{
+    animation-delay: 3s ;
+}
+#c2{
+    animation-delay: 6s ;
+    
+}
+#c3{
+    animation-delay:9s ;
+    
+}
+#c4{
+   
+    animation: c4 3s ease forwards;
+    animation-delay: 11s ;
+}
+
+@keyframes c0{
+    
+    0%, 20% {
+        transform: translateY(0);
+    }
+    25%, 45% {
+        transform: translateY(-45px);
+    }
+    50%, 70% {
+        transform: translateY(-90px);
+    }
+    75%, 95% {
+        transform: translateY(-135px);
+    }
+    100% {
+        transform: translateY(-180px);
+    }
+    
+}
+// @keyframes c1{
+//     100%{
+//         transform: translateY(-80px);
+//     }
+//     50%{
+//         transform: translateY(-40px);
+//     }
+//     90%{
+//         transform: translateY(-40px);
+//     }
+// }
+// @keyframes c2{
+//     100%{
+//         transform: translateY(-150px);
+//     }
+//     50%{
+//         transform: translateY(-80px);
+//     }
+// }
+// @keyframes c3{
+//    100%{
+//         transform: translateY(-180px);
+//     }
+//     50%{
+//         transform: translateY(-120px);
+//     }
+// }
+@keyframes c4{
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+#text{
+    background: orangered;
+    // overflow: hidden;
+    height: 50px;
+}
+
+
+
